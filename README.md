@@ -1,9 +1,7 @@
 bclubber demo
 =============
 
-## Demo
-
-[https://gabriel-lopez-lopez.github.io/bclubber/](https://gabriel-lopez-lopez.github.io/bclubber/)
+Demo: [https://gabriel-lopez-lopez.github.io/bclubber/](https://gabriel-lopez-lopez.github.io/bclubber/)
 
 En respuesta a la prueba:
 

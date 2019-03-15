@@ -14,9 +14,7 @@ import { ReactComponent as LogoComponent } from '../../assets/svg/logo.svg';
 const Logo = () => {
     return (
         <ButtonLink className="no-padding">
-            <a href="/">
-                <LogoComponent />
-            </a>
+            <LogoComponent />
         </ButtonLink>
     );
 };

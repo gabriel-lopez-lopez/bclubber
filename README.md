@@ -11,10 +11,10 @@ En respuesta a la prueba:
 - 2/ En el archivo de sketch hay 2 artboards con 2 medidas. 320 px y 1280px.
 - 3/ La maquetación debe ser responsive. Debe tener 4 break points:
 
-    • 320px
-    • 640px
-    • 1024px
-    • 1280px
+    - 320px
+    - 640px
+    - 1024px
+    - 1280px
 
 - 4/ Se enviará un archivo HTML con los css para que nuestro equipo de desarrollo inspeccione el código para verificar su limpieza y el equipo de diseño verifique si se han respetado medidas, colores, etc.
 
@@ -45,7 +45,7 @@ Instalarlas con:
 
 **npm start**
 
-Ejecuta la aplicación en modo de desarrollo en [http://localhost:3001](http://localhost:3001)
+Ejecuta la aplicación en modo de desarrollo en [http://localhost:9002](http://localhost:9002)
 
 La página se volverá a cargar si se realizan modificaciones.
 También se verá cualquier error de sintaxis del código en la consola.

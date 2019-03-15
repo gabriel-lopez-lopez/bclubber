@@ -125,8 +125,7 @@ const rules = [
                     sourceMap: true
                 }
             }
-        ],
-        // sideEffects: false
+        ]
     }
 ];
 

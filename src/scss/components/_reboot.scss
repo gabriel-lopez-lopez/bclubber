@@ -1,0 +1,50 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-SFProText-Regular);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $body-color;
+    background-color: $body-background;
+    text-align: left;
+    padding-top: 150px;
+    padding-bottom: 6rem;
+
+    transition: padding-top .5s ease-in-out;
+
+    @each $key,
+    $value in $breakpoints {
+        @if ($key!=desktop) {
+            @include for-size($key) {
+               padding-top: 90px;
+            }
+        }
+    }
+
+    @include for-size(desktop) {
+        padding-top: 150px;
+    }
+
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper:after,
+.gll-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

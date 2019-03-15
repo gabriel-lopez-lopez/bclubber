@@ -1,0 +1,58 @@
+// PUNTOS DE CORTE 
+// breakpoints map
+$breakpoints: ( 
+    phone: 320px, 
+    tablet-p: 640px, 
+    tablet-l: 1024px, 
+    desktop: 1280px
+);
+
+// BODY
+$body-background: #fcfcfc !default;
+$body-color: #484848 !default;
+
+// ENCABEZADOS HTML
+$headings-sizes: ( 
+    h1: 2.5rem, 
+    h2: 2rem, 
+    h3: 1.75rem, 
+    h4: 1.5rem, 
+    h5: 1.25rem, 
+    h6: 1rem
+) !default;
+
+// CABECERA
+$header-color: #fff !default;
+$header-background-color: #1e2245 !default;
+
+// BOTONES
+$button-color: #fff !default;
+$button-backgrounds: ( 
+    // Color de la fuente, 
+    // color del borde, 
+    // color del fondo, 
+    // fuente,
+    // tamaño de la fuente
+    // espaciado de caracteres
+    // sombra
+    // border-radius
+    // padding
+    blue:       (#fff, #1785fb, #1785fb, var(--font-Graphik), 14px, -0.2px, none, 2px, .5rem), 
+    link:       (#e7eAec, transparent, transparent, var(--font-Graphik), 14px, -0.2px, none, 2px, .5rem), 
+    neutral:    (#5f5f5f, #e7eAec, #fff, var(--font-SFProText-Bold), 12px, 0, 0 0 19px rgba(121,122,130,0.09), 6px, 1rem 2rem 1rem 2rem), 
+    positive:   (#fff, #34b8be, #34b8be,  var(--font-SFProText-Bold), 11px, 0, none, 2px 0 0 2px, .2rem .5rem),
+    negative:   (#fff, #e94166, #e94166, var(--font-SFProText-Bold), 11px, 0, none, 2px, .2rem .5rem)
+) !default;
+
+// ETIQUETAS
+$tag-price-background: rgba(0, 0, 0, .6869) !default;
+$tag-price-border-radius: 4px !default;
+
+$tag-price-color: #fff !default;
+$tag-price-font-size: 18px !default;
+$tag-price-font-family: 'SFProText-Bold' !default;
+
+$tag-price-min-color: #87909a !default;
+$tag-price-min-font-size: 11px !default;
+$tag-price-min-font-family: 'SFProText-Regular' !default;
+ 

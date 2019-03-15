@@ -1,0 +1,46 @@
+.o-dropdown {
+    display: inline;
+    &.is--categories {
+        .o-dropdown--menu {
+            width: 140px;
+            max-width: 140px;
+        }
+    }
+    &.is--cities {
+        .o-dropdown--menu {
+            width: 200px;
+            max-width: 200px;
+        }
+    }
+    &--menu {
+        position: absolute;
+        display: none;
+        min-width: 8rem;
+        padding: 50px 0;
+        margin-top: -32px;
+        margin-left: -15px;
+        font-size: 1rem;
+        color: #212529;
+        text-align: left;
+        list-style: none;
+        background-clip: padding-box;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: .25rem;
+        z-index: 1000;
+        a.dropdown--item {
+            padding: 5px;
+            display: block;
+            padding: 10px;
+            color: #fff;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            text-decoration: none;
+            background-color: $header-background-color;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        &.show {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,104 @@
+// Extends
+%clearfix:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+// Grid
+$grid-columnas: 12 !default;
+$grid-spacing: 15px !default;
+//
+/*
+ * Contenedor principal
+ */
+
+.wrapper {
+    width: 100%;
+    padding-right: $grid-spacing;
+    padding-left: $grid-spacing;
+    margin: 0 auto;
+}
+
+.wrapper,
+.gll-row {
+    @extend %clearfix;
+}
+
+/*
+ * Filas del Grid
+ */
+
+.gll-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -$grid-spacing;
+    margin-left: -$grid-spacing;
+}
+
+/*
+ * Columnas del Grid
+ */
+
+[class^="gll-col-"] {
+    position: relative;
+    width: 100%;
+    padding-right: $grid-spacing;
+    padding-left: $grid-spacing;
+}
+
+/**
+ * Itera por los puntos de corte para generar
+ * los selectores de las columnas del Grid
+ * y otras utilidades con respesto a la 
+ * sensibilidad y la visibilidad 
+ */
+
+@each $key,
+$value in $breakpoints {
+    @for $i from 1 through $grid-columnas {
+        @include for-size($key) {
+            .gll-col-#{$key}-#{$i} {
+                flex: 0 0 (100% / $grid-columnas * $i);
+                max-width: (100% / $grid-columnas * $i);
+            }
+        } 
+    }
+}
+
+@include for-min-max-size(phone, tablet-p) {
+    @for $i from 1 through $grid-columnas {
+        .gll-col-phone-#{$i} {
+            flex: 0 0 (100% / $grid-columnas * $i);
+            max-width: (100% / $grid-columnas * $i);
+        }
+    }
+} 
+
+@include for-min-max-size(tablet-p, tablet-l) {
+    @for $i from 1 through $grid-columnas {
+        .gll-col-tablet-p-#{$i} {
+            flex: 0 0 (100% / $grid-columnas * $i);
+            max-width: (100% / $grid-columnas * $i);
+        }
+    }
+} 
+
+@include for-min-max-size(tablet-l, desktop) {
+    @for $i from 1 through $grid-columnas {
+        .gll-col-tablet-l-#{$i} {
+            flex: 0 0 (100% / $grid-columnas * $i);
+            max-width: (100% / $grid-columnas * $i);
+        }
+    }
+} 
+
+.hidden {
+    display: none;
+}
+
+@include for-size(desktop) {
+    .visible-desktop {
+        display: initial !important;
+    }
+} 

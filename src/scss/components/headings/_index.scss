@@ -1,0 +1,11 @@
+/**
+ * Itera por los diferentes encabezados HTML
+ * para definir el tamaño de fuente
+ */
+
+@each $key,
+$value in $headings-sizes {
+    #{$key} {
+        font-size: #{$value};
+    }
+}

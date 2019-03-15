@@ -1,0 +1,106 @@
+$easing: cubic-bezier(.25, 1.7, .35, .8);
+$duration: 0.5s;
+$width: 8px;
+$height: 1px;
+
+.o-arrow {
+ 
+    position: relative;
+
+    .l-bar {
+        position: absolute;
+        background-color: transparent;
+        top: $height * 6;
+        left: 0;
+        width: $width;
+        height: $height;
+        display: block;
+        transform: rotate(35deg);
+        float: right;
+        border-radius: 2px;
+        &:after {
+            content: "";
+            background-color: #fff;
+            width: $width;
+            height: $height;
+            display: block;
+            float: right;
+            transition: all $duration $easing;
+            z-index: -1;
+        }
+    }
+    
+    .r-bar {
+        position: absolute;
+        background-color: transparent;
+        top: $height * 6;
+        left: $width - 2;
+        width: $width;
+        height: $height;
+        display: block;
+        transform: rotate(-35deg);
+        float: right;
+        border-radius: 2px;
+        &:after {
+            content: "";
+            background-color: #fff;
+            width: $width;
+            height: $height;
+            display: block;
+            float: right;
+            transition: all $duration $easing;
+            z-index: -1;
+        }
+    }
+    
+    &.is--right {
+        margin-left: 1rem;
+    }
+
+    .t-bar {
+        position: absolute;
+        background-color: transparent;
+        top: $height + 2;
+        left: $width - 2;
+        width: $width;
+        height: $height + 1;
+        display: block;
+        transform: rotate(35deg);
+        float: right;
+        border-radius: 2px;
+        &:after {
+            content: "";
+            background-color: #e94166;
+            width: $width;
+            height: $height + 1;
+            display: block;
+            float: right;
+            transition: all $duration $easing;
+            z-index: -1;
+        }
+    }
+    
+    .b-bar {
+        position: absolute;
+        background-color: transparent;
+        top: $height + 6;
+        left: $width - 2;
+        width: $width;
+        height: $height + 1;
+        display: block;
+        transform: rotate(-35deg);
+        float: right;
+        border-radius: 2px;
+        &:after {
+            content: "";
+            background-color: #e94166;
+            width: $width;
+            height: $height + 1;
+            display: block;
+            float: right;
+            transition: all $duration $easing;
+            z-index: -1;
+        }
+    }
+
+}

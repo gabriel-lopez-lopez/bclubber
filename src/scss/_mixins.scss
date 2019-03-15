@@ -1,0 +1,53 @@
+@mixin for-phone {
+    @media (max-width: 320px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-p {
+    @media (min-width: 640px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-l {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin for-desktop {
+    @media (min-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin for-size($size) {
+    @media (min-width: map-get($breakpoints, $size)) {
+        @content;
+    }
+}
+
+@mixin for-max-size($size) {
+    @media (max-width: map-get($breakpoints, $size)) {
+        @content;
+    }
+}
+
+@mixin for-min-max-size($min-size, $max-size) {
+    @media (min-width: map-get($breakpoints, $min-size)) and (max-width: map-get($breakpoints, $max-size)) {
+        @content;
+        @include hidden-and-visible-for-size($min-size, $max-size);
+    }
+}
+
+@mixin hidden-and-visible-for-size($min-size, $max-size) {
+    .hidden-#{$min-size},
+    .hidden-#{$max-size} {
+        display: none !important;
+    }
+    .visible-#{$min-size},
+    .visible-#{$max-size} {
+        display: initial !important;
+    }
+}

@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'SFProText-Regular';
+    src: url('./fonts/SFProText-Regular.eot');
+    src: url('./fonts/SFProText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/SFProText-Regular.woff2') format('woff2'),
+        url('./fonts/SFProText-Regular.woff') format('woff'),
+        url('./fonts/SFProText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFProText-Light';
+    src: url('./fonts/SFProText-Light.eot');
+    src: url('./fonts/SFProText-Light.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/SFProText-Light.woff2') format('woff2'),
+        url('./fonts/SFProText-Light.woff') format('woff'),
+        url('./fonts/SFProText-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'SFProText-Bold';
+    src: url('./fonts/SFProText-Bold.eot');
+    src: url('./fonts/SFProText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/SFProText-Bold.woff2') format('woff2'),
+        url('./fonts/SFProText-Bold.woff') format('woff'),
+        url('./fonts/SFProText-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik-Medium';
+    src: url('./fonts/Graphik-Medium.eot');
+    src: url('./fonts/Graphik-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Graphik-Medium.woff2') format('woff2'),
+        url('./fonts/Graphik-Medium.woff') format('woff'),
+        url('./fonts/Graphik-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --font-SFProText-Regular: 'SFProText-Regular';
+    --font-SFProText-Light: 'SFProText-Light';
+    --font-SFProText-Bold: 'SFProText-Bold';
+    --font-Graphik: 'Graphik-Medium';
+}

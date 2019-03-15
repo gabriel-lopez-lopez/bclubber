@@ -1,0 +1,68 @@
+
+$button-positive: map-get($button-backgrounds, 'positive');
+
+.o-tag {
+    
+    &.is--price {
+        position: absolute;
+        padding: 3px 15px 10px;
+        margin: 16px 0 0 16px;
+        background: #000000;
+        border-radius: 4px;
+        opacity: .7;
+        overflow: hidden;
+
+        .since {
+            display: block;
+            color: #87909a;
+            font-family: var(--font-SFProText-Regular);
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+        .amount {
+            display: block;
+            color: #ffffff;
+            font-family: var(--font-SFProText-Bold);
+            font-size: 18px;
+            line-height: 15px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
+        }
+    }
+
+    &.is--discount {
+        // position: absolute;
+        // right: 0;
+        // // padding: 3px 15px;
+        // margin: 16px 0 0 16px;
+        // border-radius: 4px;
+        // overflow: hidden;
+
+        // border-color: nth($button-positive, 2);
+        // background-color: nth($button-positive, 3);
+        // border-top-right-radius: 0;
+        // border-bottom-right-radius: 0;
+
+        // text-align: center;
+        // vertical-align: middle;
+     
+        // .discount {
+        //     display: block;
+        //     color: #ffffff;
+        //     // font-family: var(--font-SFProText-Bold);
+        //     // font-size: 18px;
+        //     // line-height: 15px;
+        //     // box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
+
+        //     color: nth($button-positive, 1);
+        //     font-family: nth($button-positive, 4);
+        //     font-size: nth($button-positive, 5);
+        //     letter-spacing: nth($button-positive, 6);
+        //     box-shadow: nth($button-positive, 7);
+        //     border-radius:nth($button-positive, 8);
+        //     padding:nth($button-positive, 9);
+
+        // }
+    }
+
+}

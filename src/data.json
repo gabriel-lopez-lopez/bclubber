@@ -1,0 +1,76 @@
+{
+    "lomasdestacado": [
+        {
+            "id": 0,
+            "date": "SÁBADO 22 DIC.",
+            "time": "19:00 PM",
+            "image": "/assets/images/cover.png",
+            "title": "Full Mon Europe in Barbate",
+            "location": "Plaza de las Ventas - Madrid",
+            "amount": 35,
+            "discount": "-15%"
+        },
+        {
+            "id": 1,
+            "date": "SÁBADO 22 DIC.",
+            "time": "19:00 PM",
+            "image": "/assets/images/cover.png",
+            "title": "Full Mon Europe in BarbateFull Mon Europe in Barbate",
+            "location": "Plaza de las Ventas - Madrid",
+            "amount": 35,
+            "discount": "-15%"
+        },
+        {
+            "id": 2,
+            "date": "SÁBADO 22 DIC.",
+            "time": "19:00 PM",
+            "image": "/assets/images/cover.png",
+            "title": "Full Mon Europe in BarbateFull Mon Europe in Barbate",
+            "location": "Plaza de las Ventas - Madrid",
+            "amount": 35,
+            "discount": "-15%"
+        }
+    ],
+    "eventos": [
+        {
+            "id": 0,
+            "date": "SÁBADO 22 DIC.",
+            "time": "19:00 PM",
+            "image": "/assets/images/cover.png",
+            "title": "Full Mon Europe in Barbate, con doble línea",
+            "location": "Plaza de las Ventas - Madrid",
+            "amount": 35,
+            "discount": "-15%"
+        },
+        {
+            "id": 1,
+            "date": "SÁBADO 22 DIC.",
+            "time": "19:00 PM",
+            "image": "/assets/images/cover.png",
+            "title": "Full Mon Europe in Barbate, con doble línea",
+            "location": "Plaza de las Ventas - Madrid",
+            "amount": 35,
+            "discount": "-15%"
+        },
+        {
+            "id": 2,
+            "date": "SÁBADO 22 DIC.",
+            "time": "19:00 PM",
+            "image": "/assets/images/cover.png",
+            "title": "Full Mon Europe in Barbate",
+            "location": "Plaza de las Ventas - Madrid",
+            "amount": 35,
+            "discount": "-15%"
+        },
+        {
+            "id": 3,
+            "date": "SÁBADO 22 DIC.",
+            "time": "19:00 PM",
+            "image": "/assets/images/cover.png",
+            "title": "Full Mon Europe in Barbate",
+            "location": "Plaza de las Ventas - Madrid",
+            "amount": 35,
+            "discount": "-15%"
+        }
+    ]
+}

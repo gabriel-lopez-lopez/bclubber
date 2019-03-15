@@ -1,0 +1,56 @@
+// BOTONES
+.gll-button {
+    display: inline-block;
+    font-weight: 400;
+    color: $body-color;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .5rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    border-radius: 0;
+    outline: none;
+    
+    &.no-padding {
+        padding: 0;
+    }
+    /**
+     * Itera por los diferentes tipos de botones
+     */
+    @each $key, 
+    $value in $button-backgrounds {
+        &--#{$key} {
+            color: nth($value, 1);
+            border-color: nth($value, 2);
+            background-color: nth($value, 3);
+            font-family: nth($value, 4);
+            font-size: nth($value, 5);
+            letter-spacing: nth($value, 6);
+            box-shadow: nth($value, 7);
+            border-radius:nth($value, 8);
+            padding:nth($value, 9);
+        }
+    }
+
+    &--blue,
+    &--link {
+        padding-left: 1.65rem;
+        padding-right: 1.65rem;
+    }
+    &--link {
+        .o-arrow {
+            margin-left: 1rem;
+        }
+    }
+    &--block {
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 14px;
+        letter-spacing: -0.2px;
+    }
+
+}

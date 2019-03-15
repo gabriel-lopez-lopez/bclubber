@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24">
+	<defs>
+		<clipPath id="clip_0">
+			<rect x="-200" y="-16" width="320" height="1024" clip-rule="evenodd"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip_0)">
+		<path fill="none" stroke="rgb(255,255,255)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(2.69531 2.69531)" d="M7.61293 15.2259C11.8174 15.2259 15.2259 11.8174 15.2259 7.61293C15.2259 3.40842 11.8174 0 7.61293 0C3.40842 0 0 3.40842 0 7.61293C0 11.8174 3.40842 15.2259 7.61293 15.2259Z"/>
+	</g>
+	<defs>
+		<clipPath id="clip_1">
+			<rect x="-200" y="-16" width="320" height="1024" clip-rule="evenodd"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip_1)">
+		<path fill="none" stroke="rgb(255,255,255)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="4" transform="translate(15.3835 15.3835)" d="M0.42294 0.42294L5.56823 5.56823"/>
+	</g>
+
+</svg>

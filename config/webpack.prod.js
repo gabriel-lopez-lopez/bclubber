@@ -42,6 +42,7 @@ module.exports = webpackMerge.strategy({
         output: {
             filename: 'app.core.[hash:8].js',
             path: appPaths.dirBuild,
+            publicPath: '',
         },
 
         mode: 'production',
@@ -159,5 +160,4 @@ module.exports = webpackMerge.strategy({
         ]
     }
 
-)
-);
+));
